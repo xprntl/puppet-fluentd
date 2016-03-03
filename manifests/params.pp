@@ -3,7 +3,7 @@
 #
 class fluentd::params {
     $package_name = 'td-agent'
-    $package_ensure = 'installed'
+    $package_ensure = 'latest'
     $install_repo = true
     $service_ensure = 'running'
     $service_enable = true
