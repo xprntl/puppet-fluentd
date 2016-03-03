@@ -9,10 +9,10 @@ class fluentd::install_repo::yum (
 
     # Sorry for the different naming of the Repository between debian and redhat.
     # But I dont want rename it to avoid a duplication.
-    yumrepo { 'treasuredata':
+    yumrepo { 'treasure-data':
         descr => 'Treasure Data',
-        baseurl => 'http://packages.treasuredata.com/redhat/$basearch',
-        gpgkey => 'http://packages.treasuredata.com/redhat/RPM-GPG-KEY-td-agent',
+        baseurl='http://packages.treasuredata.com/2/redhat/$releasever/$basearch'
+        gpgkey='https://packages.treasuredata.com/GPG-KEY-td-agent'
         gpgcheck => 1,
     }
 
